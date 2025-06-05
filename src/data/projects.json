@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "title": "UX Design für Health-App",
+    "category": "software",
+    "importance": "main",
+    "shortDesc": "Benutzerorientierte Gestaltung einer App zur Gesundheitsüberwachung",
+    "longDesc": "Dieses Projekt umfasste die vollständige UX-Recherche, Konzeption und Gestaltung einer App zur Gesundheitsüberwachung mit Fokus auf Benutzerfreundlichkeit für ältere Menschen.",
+    "technologies": [
+      "Figma",
+      "React Native",
+      "User Testing"
+    ],
+    "images": [
+      "/assets/images/projects/health-app-1.jpg"
+    ],
+    "year": 2023
+  },
+  {
+    "id": 2,
+    "title": "Ergonomisches Eingabegerät",
+    "category": "hardware",
+    "importance": "main",
+    "shortDesc": "Entwicklung eines ergonomischen Controllers für Menschen mit eingeschränkter Mobilität",
+    "longDesc": "In diesem Projekt wurde ein ergonomisches Eingabegerät für Menschen mit eingeschränkter Mobilität entwickelt. Der Schwerpunkt lag auf der Anpassbarkeit und Benutzerfreundlichkeit.",
+    "technologies": [
+      "Arduino",
+      "3D-Druck",
+      "Elektrotechnik"
+    ],
+    "images": [
+      "/assets/images/projects/controller-1.jpg"
+    ],
+    "year": 2022
+  },
+  {
+    "id": 3,
+    "title": "Interface Design System",
+    "category": "design",
+    "importance": "main",
+    "shortDesc": "Entwicklung eines einheitlichen Design Systems für Software-Anwendungen",
+    "longDesc": "Erstellung eines modularen Design Systems, das die konsistente Gestaltung verschiedener Software-Anwendungen ermöglicht.",
+    "technologies": [
+      "Figma",
+      "Design Tokens",
+      "CSS Architecture"
+    ],
+    "images": [
+      "/assets/images/projects/design-system-1.jpg"
+    ],
+    "year": 2023
+  },
+  {
+    "id": 4,
+    "title": "Smarte Heimautomatisierung",
+    "category": "hardware",
+    "importance": "secondary",
+    "shortDesc": "Integration verschiedener IoT-Geräte für ein verbessertes Wohnerlebnis",
+    "longDesc": "Konzeption und Umsetzung eines Systems zur nahtlosen Integration verschiedener IoT-Geräte im Haushalt mit Fokus auf Benutzerfreundlichkeit und Energieeffizienz.",
+    "technologies": [
+      "ESP32",
+      "MQTT",
+      "React"
+    ],
+    "images": [
+      "/assets/images/projects/smart-home-1.jpg"
+    ],
+    "year": 2021
+  },
+  {
+    "id": 5,
+    "title": "Kognitive Belastungsmessung",
+    "category": "software",
+    "importance": "secondary",
+    "shortDesc": "Entwicklung eines Tools zur Messung kognitiver Belastung während der Computernutzung",
+    "longDesc": "Dieses Forschungsprojekt umfasste die Entwicklung und Validierung eines Tools zur Echtzeitmessung der kognitiven Belastung von Benutzern während der Computernutzung.",
+    "technologies": [
+      "Python",
+      "Machine Learning",
+      "Eye Tracking"
+    ],
+    "images": [
+      "/assets/images/projects/cognitive-load-1.jpg"
+    ],
+    "year": 2022
+  },
+  {
+    "id": 6,
+    "title": "AR-Navigationsapp für Innenräume",
+    "category": "software",
+    "importance": "secondary",
+    "shortDesc": "Augmented-Reality-Anwendung zur Navigation in komplexen Gebäuden",
+    "longDesc": "Diese AR-Anwendung hilft Benutzern, sich in komplexen Gebäuden wie Krankenhäusern, Universitäten oder Einkaufszentren zu orientieren.",
+    "technologies": [
+      "ARKit",
+      "Unity",
+      "Indoor Positioning"
+    ],
+    "images": [
+      "/assets/images/projects/ar-nav-1.jpg"
+    ],
+    "year": 2022
+  }
+]

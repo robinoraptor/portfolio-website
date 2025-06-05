@@ -1,0 +1,250 @@
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  padding: 40px 0;
+}
+
+/* Zentrale Linie */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Timeline Fortschrittsanzeige */
+.timeline-progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+/* Timeline Items */
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin-bottom: 60px;
+  width: 50%;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.timeline-item.active {
+  opacity: 1;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 30px;
+  left: 50%;
+}
+
+/* Timeline Dot - komplett entfernt auf Desktop */
+.timeline-dot {
+  display: none !important; /* !important garantiert, dass es ausgeblendet bleibt */
+  visibility: hidden !important; /* Doppelte Absicherung */
+  position: absolute;
+  width: 0; /* Kein Platz beanspruchen */
+  height: 0;
+  overflow: hidden; /* Versteckt Inhalte */
+  opacity: 0;
+  pointer-events: none; /* Ignoriert Klicks */
+}
+
+/* Timeline Content */
+.timeline-content {
+  background-color: var(--white, #ffffff);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  transition: all 0.3s ease;
+  position: relative;
+  border-left: 3px solid #f97316; /* Orange-500 */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  border-left: none;
+  border-right: 3px solid #f97316; /* Orange-500 */
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #f97316; /* Orange-500 */
+}
+
+.timeline-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.timeline-description {
+  margin-bottom: 15px;
+}
+
+/* Timeline Tags */
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-tag {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+/* Detail view tags */
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Animate elements */
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dekorative Elemente */
+.grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.dot-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.futuristic-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.futuristic-circle.large {
+  width: 400px;
+  height: 400px;
+}
+
+.futuristic-circle.small {
+  width: 200px;
+  height: 200px;
+}
+
+.circle-1 {
+  top: 10%;
+  right: -100px;
+}
+
+.circle-2 {
+  bottom: 10%;
+  left: -50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-line,
+  .timeline-progress {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 0;
+    width: 100%;
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+    padding-left: 50px;
+  }
+  
+  /* Dots NUR auf Mobilgeräten anzeigen */
+  .timeline-dot {
+    display: block !important;
+    visibility: visible !important;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 25px;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .dot-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .timeline-item.active .timeline-dot {
+    background-color: #f97316; /* Orange-500 */
+  }
+  
+  .timeline-content {
+    max-width: 100%;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    border-right: none;
+    border-left: 3px solid #f97316; /* Orange-500 */
+  }
+}

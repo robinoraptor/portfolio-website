@@ -1,0 +1,63 @@
+{isModalOpen && selectedProject && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-75 backdrop-blur-sm">
+            <div
+              className={`${theme.modalBg} rounded-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all`}
+              style={{ animation: 'modalFadeIn 0.3s ease-out forwards' }}
+            >
+              <div className="h-64 md:h-80 bg-gray-300 overflow-hidden">
+                <img
+                  src={selectedProject.images[0] || "/assets/images/placeholder.jpg"}
+                  alt={selectedProject.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className={`${theme.text} text-3xl font-bold`}>
+                    {selectedProject.title}
+                  </h3>
+                  <span className={`text-orange-500 text-lg`}>
+                    {selectedProject.year}
+                  </span>
+                </div>
+
+                <p className={`${theme.text} text-lg mb-6`}>
+                  {selectedProject.longDesc}
+                </p>
+
+                <div className="mb-6">
+                  <h4 className={`${theme.text} text-lg font-semibold mb-2`}>
+                    {content[language].technologies}:
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedProject.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className={`${theme.buttonBg} ${theme.text} py-1 px-3 rounded-full`}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex justify-end">
+                  <button
+                    className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md transition-all transform hover:scale-105"
+                    onClick={() => {
+                      playClickSound();
+                      setIsModalOpen(false);
+                    }}
+                  >
+                    {content[language].closeButton}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+
+
+
+

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "UI/UX Design",
+    "description": "Gestaltung benutzerfreundlicher Interfaces mit fokus auf die Benutzererfahrung",
+    "icon": "/assets/images/skills/ui-ux.png",
+    "tools": [
+      "Figma",
+      "Adobe XD",
+      "Sketch"
+    ]
+  },
+  {
+    "name": "Human Factors",
+    "description": "Anwendung psychologischer Prinzipien auf die Gestaltung von Mensch-Maschine-Systemen",
+    "icon": "/assets/images/skills/human-factors.png",
+    "tools": [
+      "Cognitive Walkthroughs",
+      "Heuristic Evaluation",
+      "Mental Models"
+    ]
+  },
+  {
+    "name": "Usability Testing",
+    "description": "Durchführung von Tests zur Evaluation der Benutzerfreundlichkeit von Produkten",
+    "icon": "/assets/images/skills/usability.png",
+    "tools": [
+      "User Interviews",
+      "A/B Testing",
+      "Eye Tracking"
+    ]
+  },
+  {
+    "name": "Frontend Development",
+    "description": "Entwicklung reaktiver und zugänglicher Benutzeroberflächen",
+    "icon": "/assets/images/skills/frontend.png",
+    "tools": [
+      "React",
+      "HTML/CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "Prototyping",
+    "description": "Erstellung interaktiver Prototypen zur Validierung von Designkonzepten",
+    "icon": "/assets/images/skills/prototype.png",
+    "tools": [
+      "Axure RP",
+      "InVision",
+      "Adobe XD"
+    ]
+  },
+  {
+    "name": "User Research",
+    "description": "Durchführung von Nutzerstudien zur Identifikation von Bedürfnissen und Anforderungen",
+    "icon": "/assets/images/skills/research.png",
+    "tools": [
+      "Interviews",
+      "Surveys",
+      "Contextual Inquiry"
+    ]
+  }
+]

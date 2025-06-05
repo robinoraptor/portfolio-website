@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "date": "2018 - 2021",
+    "title": "Bachelor Ingenieurpsychologie",
+    "description": "Grundlagenstudium zur Schnittstelle zwischen Mensch und Technik mit Fokus auf kognitive Prozesse und ergonomische Gestaltung.",
+    "detailedDescription": [
+      "Nach drei intensiven Jahren schloss ich mein Studium der Ingenieurpsychologie mit dem Schwerpunkt auf Mensch-Technik-Interaktion erfolgreich ab. Meine Abschlussarbeit befasste sich mit der Nutzerführung in komplexen Systemen und erhielt sehr positive Bewertungen.",
+      "Während des Studiums hatte ich bereits erste praktische Erfahrungen durch Praktika und studentische Arbeiten gesammelt. Besonders ein Praktikum in einem Usability-Labor prägte meine Begeisterung für das Zusammenspiel von Psychologie und Technik.",
+      "Neben dem regulären Studium engagierte ich mich in studentischen Projekten und nahm an verschiedenen interdisziplinären Veranstaltungen teil, was mir half, mein Netzwerk frühzeitig aufzubauen und praktische Erfahrungen zu sammeln."
+    ],
+    "tags": [
+      "Human Factors",
+      "Ergonomics",
+      "Research Methods",
+      "Studium"
+    ],
+    "type": "education"
+  },
+  {
+    "id": 2,
+    "date": "2019",
+    "title": "Praktikant User Research",
+    "description": "Durchführung von Nutzerstudien und Usability-Tests für verschiedene digitale Produkte.",
+    "detailedDescription": [
+      "Als Praktikant im Bereich User Research arbeitete ich an der Konzeption und Durchführung von Usability-Studien. Dabei lernte ich verschiedene Methoden der Nutzerforschung kennen und anwenden.",
+      "In dieser Zeit konnte ich meine theoretischen Kenntnisse aus dem Studium in die Praxis umsetzen und erhielt wertvolle Einblicke in die Arbeitsprozesse eines professionellen UX-Teams.",
+      "Die Erfahrungen aus diesem Praktikum bestärkten mich in meinem Berufswunsch und legten den Grundstein für meine weitere Karriere im Bereich Human Factors und UX Design."
+    ],
+    "tags": [
+      "User Testing",
+      "Data Analysis",
+      "Interview Techniques",
+      "Praktikum"
+    ],
+    "type": "experience"
+  },
+  {
+    "id": 3,
+    "date": "2020",
+    "title": "Studentischer Mitarbeiter",
+    "description": "Assistenz bei Forschungsprojekten im Bereich der physischen und kognitiven Ergonomie.",
+    "detailedDescription": [
+      "Als studentischer Mitarbeiter unterstützte ich verschiedene Forschungsprojekte an der Universität. Meine Aufgaben umfassten die Vorbereitung und Durchführung von Experimenten, Datenanalyse und die Mitarbeit an wissenschaftlichen Publikationen.",
+      "Besonders interessant war die Arbeit an einem Projekt zur kognitiven Belastung bei der Nutzung komplexer Softwaresysteme. Hier konnte ich meine Kenntnisse in experimenteller Psychologie und statistischer Auswertung vertiefen.",
+      "Die enge Zusammenarbeit mit Professoren und Doktoranden gab mir wertvolle Einblicke in die wissenschaftliche Arbeitsweise und förderte mein methodisches Denken."
+    ],
+    "tags": [
+      "Laborarbeit",
+      "Datenerhebung",
+      "Experimentdesign",
+      "Wissenschaft"
+    ],
+    "type": "experience"
+  },
+  {
+    "id": 4,
+    "date": "2021",
+    "title": "Weiterbildung: Zertifizierter UX Designer",
+    "description": "Absolvierung eines Professional Certificate für UX Design mit Schwerpunkt auf Responsive Design, UX Research und Prototyping.",
+    "detailedDescription": [
+      "Parallel zu meinem Masterstudium absolvierte ich eine Zertifizierung im Bereich UX Design. Diese vermittelte mir fundierte Kenntnisse in den Bereichen Responsive Design, User Research, Prototyping und Usability Testing.",
+      "Im Rahmen der Zertifizierung entwickelte ich mehrere Projekte, darunter eine mobile App für nachhaltige Mobilität. Dabei durchlief ich den gesamten Design-Prozess von der Recherche bis zum High-Fidelity-Prototyp.",
+      "Die Kombination aus theoretischen Inhalten und praktischen Projekten half mir, meine Design-Fähigkeiten zu entwickeln und ein Portfolio aufzubauen, das meine Kompetenzen demonstriert."
+    ],
+    "tags": [
+      "UX Design",
+      "Responsive Design",
+      "Prototyping",
+      "Zertifizierung"
+    ],
+    "type": "education"
+  },
+  {
+    "id": 5,
+    "date": "2022",
+    "title": "Master Human Factors",
+    "description": "Interdisziplinäres Studium mit Fokus auf menschzentrierte Gestaltung und Mensch-Technik-Interaktion.",
+    "detailedDescription": [
+      "Im Master Human Factors vertiefte ich meine Kenntnisse über die menschzentrierte Gestaltung von Produkten und Systemen. Das interdisziplinäre Studium verband Inhalte aus Psychologie, Informatik, Design und Ingenieurwissenschaften.",
+      "Meine Masterarbeit untersuchte die Auswirkungen von adaptiven Interfaces auf die kognitive Belastung und Benutzerfreundlichkeit. Durch die Kombination von Eye-Tracking und physiologischen Messungen konnte ich innovative Forschungsmethoden anwenden.",
+      "Während des Masterstudiums hatte ich die Möglichkeit, an verschiedenen Forschungsprojekten mitzuwirken und an internationalen Konferenzen teilzunehmen, was meinen wissenschaftlichen Horizont erweiterte."
+    ],
+    "tags": [
+      "User Research",
+      "Cognitive Engineering",
+      "Interface Design",
+      "Master"
+    ],
+    "type": "education"
+  },
+  {
+    "id": 6,
+    "date": "2023",
+    "title": "UX Designer",
+    "description": "Entwicklung benutzerfreundlicher Oberflächen für verschiedene Softwareprodukte im Bereich der Industrieautomatisierung.",
+    "detailedDescription": [
+      "Als UX Designer bei einem Technologieunternehmen war ich für die Gestaltung benutzerfreundlicher Interfaces für komplexe Softwareprodukte im Bereich der Industrieautomatisierung verantwortlich.",
+      "Meine Aufgaben umfassten die Durchführung von Nutzerrecherchen, die Erstellung von Wireframes und Prototypen sowie die enge Zusammenarbeit mit Entwicklern bei der Implementierung der Designs.",
+      "Eine besondere Herausforderung war die Balance zwischen technischer Komplexität und Benutzerfreundlichkeit zu finden. Durch regelmäßige Usability-Tests und iterative Designprozesse konnte ich die Nutzererfahrung kontinuierlich verbessern."
+    ],
+    "tags": [
+      "UX Design",
+      "Wireframing",
+      "Prototyping",
+      "Industrie-Software"
+    ],
+    "type": "experience"
+  },
+  {
+    "id": 7,
+    "date": "2024",
+    "title": "Freiberuflicher UX Consultant",
+    "description": "Beratung bei der menschzentrierten Gestaltung digitaler Produkte für verschiedene Kunden.",
+    "detailedDescription": [
+      "Als freiberuflicher UX Consultant biete ich meine Expertise in der menschzentrierten Gestaltung digitaler Produkte für verschiedene Kunden an. Dabei habe ich die Möglichkeit, an vielfältigen Projekten zu arbeiten und flexibel auf die Bedürfnisse meiner Kunden einzugehen.",
+      "Mein Leistungsspektrum umfasst UX-Audits, Nutzungsforschung, Interface-Design und die Entwicklung von Design-Systemen. Durch meinen interdisziplinären Hintergrund kann ich sowohl die technischen als auch die menschlichen Aspekte eines Produkts berücksichtigen.",
+      "Die selbstständige Tätigkeit ermöglicht es mir, meine Kreativität voll zu entfalten und meine Vision von nutzerfreundlichen, ästhetisch ansprechenden Produkten umzusetzen. Die positiven Rückmeldungen meiner Kunden bestätigen mich in meinem Ansatz."
+    ],
+    "tags": [
+      "Consulting",
+      "UX Strategy",
+      "Workshop Facilitation",
+      "Freelance"
+    ],
+    "type": "experience"
+  },
+  {
+    "id": 8,
+    "date": "2025",
+    "title": "Heute",
+    "description": "Fokus auf menschzentrierte Gestaltung digitaler und physischer Produkte, die sowohl funktional als auch ästhetisch ansprechend sind.",
+    "detailedDescription": [
+      "Aktuell konzentriere ich mich auf die menschzentrierte Gestaltung innovativer digitaler und physischer Produkte. Dabei verbinde ich meine Kenntnisse aus Human Factors, UX Design und Prototyping, um ganzheitliche Lösungen zu entwickeln.",
+      "Mein Ziel ist es, Produkte zu gestalten, die nicht nur funktional und benutzerfreundlich sind, sondern auch ästhetisch ansprechen und positive emotionale Reaktionen hervorrufen. Durch die kontinuierliche Weiterbildung in neuen Technologien und Designmethoden halte ich mich auf dem aktuellen Stand.",
+      "Die Verbindung von Kreativität und Technologie ist für mich nicht nur ein Beruf, sondern eine Leidenschaft. Ich freue mich darauf, auch in Zukunft innovative Lösungen zu entwickeln, die das Leben der Menschen verbessern."
+    ],
+    "tags": [
+      "Innovation",
+      "Human-Centered Design",
+      "Kreativität",
+      "Technologie"
+    ],
+    "type": "experience"
+  }
+]

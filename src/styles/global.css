@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basis-Styling */
+:root {
+  --white: #ffffff;
+  --light-gray: #f1f3f5;
+  --mid-gray: #adb5bd;
+  --dark-gray: #495057;
+  --darker-gray: #343a40;
+  --orange: #ff5f00;
+}
+
+/* Globale Stile */
+body {
+  font-family: 'Space Mono', monospace;
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50;
+  overflow-x: hidden;
+}
+
+/* Überschriften linksbündig */
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+/* Damit der normale Cursor nicht angezeigt wird */
+* {
+  cursor: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e55500;
+}
+
+/* Dark Mode Scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #e55500;
+}
+
+/* Smooth Scrolling mit verbessertem Easing */
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Animation für Elemente beim Scrollen */
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Verbesserte Übergänge */
+.transition-smooth {
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1) !important;
+  transition-duration: 500ms !important;
+}
+
+/* Glasmorphismus-Effekte */
+.glass-effect {
+  @apply backdrop-blur-md bg-opacity-80;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.dark .glass-effect {
+  @apply backdrop-blur-md bg-opacity-80;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Retro-Futuristische Elemente */
+.grid-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(var(--light-gray) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--light-gray) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.dark .grid-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
+
+.futuristic-circle {
+  position: absolute;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.futuristic-circle.large {
+  width: 300px;
+  height: 300px;
+}
+
+.futuristic-circle.small {
+  width: 150px;
+  height: 150px;
+}
+
+.dot-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--mid-gray) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+/* Animationen */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Verbesserte Übergänge für Projektgrid */
+.project-grid-transition {
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Glasmorphismus-Navbar */
+.glass-navbar {
+  @apply backdrop-blur-md;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .glass-navbar {
+  background-color: rgba(33, 37, 41, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Animationen */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-animation {
+  animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+/* Benutzerdefinierte Cursor-Stile */
+.cursor-none {
+  cursor: none !important;
+}
+
+/* Hover-Effekt für Links */
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--orange);
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Verbesserte Buttons */
+.button-primary {
+  @apply bg-orange-500 text-white py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg;
+  box-shadow: 0 4px 15px rgba(255, 95, 0, 0.3);
+}
+
+.button-primary:hover {
+  box-shadow: 0 8px 20px rgba(255, 95, 0, 0.4);
+}
+
+.button-secondary {
+  @apply bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100 py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105;
+}
+
+/* Skill Tags */
+.skill-tag {
+  @apply px-3 py-1.5 rounded-full text-sm transition-all duration-300 transform hover:scale-105 hover:bg-orange-500 hover:text-white;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.dark .skill-tag {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+}
+
+/* Timeline-spezifische Stile */
+.timeline-container {
+  position: relative;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin-bottom: 60px;
+  width: 50%;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.timeline-item.active {
+  opacity: 1;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.dot-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .timeline-line,
+  .timeline-progress {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 0;
+    width: 100%;
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+    padding-left: 50px;
+  }
+  
+  .timeline-dot {
+    left: 20px;
+  }
+}
+
+/* Verbesserte Übergänge für Dark Mode - erweiterte Stile */
+/* Sanftere Textübergänge */
+body, h1, h2, h3, h4, h5, h6, p, span, a, button {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Verhindere Textverlust beim Themenwechsel */
+.text-gray-900.dark\:text-gray-50,
+.text-gray-900.dark\:text-white,
+.text-gray-700.dark\:text-gray-300,
+.text-gray-800.dark\:text-gray-200 {
+  @apply transition-colors duration-300;
+}
+
+/* Skaliere Animationen für bessere Performance */
+.scale-transition {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Fix für Textflackern */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Sicherstellen, dass alle Dark Mode Übergänge sanft sind */
+html.dark * {
+  transition-duration: 0.3s;
+}
+
+/* Verbesserte Übergänge für Container beim Themenwechsel */
+.bg-white.dark\:bg-gray-900,
+.bg-gray-50.dark\:bg-gray-900,
+.bg-gray-100.dark\:bg-gray-800,
+.bg-gray-200.dark\:bg-gray-800 {
+  @apply transition-colors duration-300;
+}
+
+/* Verbessere Farbübergänge von Orange */
+.text-orange-500,
+.bg-orange-500 {
+  @apply transition-colors duration-300;
+}
