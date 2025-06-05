@@ -9,7 +9,6 @@ import Timeline from './components/Timeline';
 import ContactSection from './components/ContactSection';
 import RetroGame from './components/RetroGame';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   // Alle Komponenten beim Scrollen animieren
@@ -83,9 +82,6 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        {/* Custom Cursor (für PNG-Cursor) */}
-        <CustomCursor />
-
         {/* Navbar */}
         <Navbar />
 
@@ -132,8 +128,8 @@ function App() {
           }
           
           * {
+            cursor: auto !important;
             font-family: 'Space Mono', monospace;
-            cursor: none !important; /* Versteckt den nativen Cursor */
           }
           
           /* Sanftere Scrollanimation mit Easing */
